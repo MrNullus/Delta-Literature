@@ -51,6 +51,12 @@
     margin-bottom: 0;
 }
 
+@media screen and (min-width: 1440px) {
+    .biography header h3.subheading {
+        font-size: 1.4rem;
+    }
+}
+
 .biography {
     padding: 2rem;
 }

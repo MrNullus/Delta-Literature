@@ -144,6 +144,23 @@ ol {
     padding: .6rem 1.3rem;
 }
 
+@media screen and (max-width: 425px) {
+    .navbar .nav-links {
+        flex-wrap: wrap;
+    }
+
+    .hero-content p {
+        padding: 0 1rem;
+        font-size: 1rem;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .hero-content p {
+        font-size: 1.6rem;
+    }    
+}
+
 .nav-link {
     padding: 1rem 1.3rem;
     position: relative;
