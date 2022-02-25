@@ -20,6 +20,7 @@ label {
 }
 
 input[type=text],
+input[type=email],
 textarea {
     width: 100%;
 
@@ -37,6 +38,7 @@ textarea {
 }
 
 input[type=text]::placeholder,
+input[type=email]::placeholder,
 textarea::placeholder{
     color: black;
     font-size: 1rem;
