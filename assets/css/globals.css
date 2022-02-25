@@ -62,12 +62,17 @@ ol {
     list-style: none;
 }
 
+
 /*
 ================
   Classes
   Globals
 ================
 */
+.sr-only {
+    display: none!important;
+}
+
 .content p {
     text-indent: 42px;
     padding: 12px;
