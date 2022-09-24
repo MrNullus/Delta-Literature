@@ -100,24 +100,15 @@
 
 .box-themes {
     display: grid;
-    grid-template-columns: 2fr 1fr;
     gap: 1.5rem;
     padding: .67rem 2rem;
-}
-
-@media screen and (max-width: 780px) {
-    .box-themes {
-        grid-template-columns: 1fr;
-    }
-
-    .recomended-container {
-        margin-top: 1.2rem;
-    }
+    grid-template-columns: 1fr;
 }
 
 .recomended-container {
     padding-left: 2.4rem;
-    border-left: 2px solid var(--black)
+    border-left: 2px solid var(--black);
+    margin-top: 1.2rem;
 }
 
 .recomended h3 {
@@ -144,4 +135,41 @@
 
 .recomended-link a:hover {
     border: 2px solid var(--black);
+}
+
+ul.school-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+    gap: 2.5rem;
+}
+
+.school-list .theme-item {
+    display: flex;
+    flex-direction: column;
+    max-width: 40%;
+    background: #F9F9F9;
+    padding-top: 0.96rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-radius: 5px;
+    font-weight: normal;
+    word-break: break-all;
+}
+
+@media screen and (max-width: 990px) {
+    .school-list .theme-item {
+        max-width: 80%;
+    }
+}
+
+.school-list .theme-item strong {
+    display: inline;
+    margin-bottom:  0.67rem;
+}
+
+.school-list .theme-item .nav-link {
+    text-decoration: underline;
+    width: 145px;
 }

@@ -73,6 +73,28 @@ ol {
     display: none!important;
 }
 
+.show-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0.78rem;
+
+    border-top: 1px #eee solid;
+    border-radius: 2px;
+    max-width: 100%;
+    text-align: center;
+    padding-top: 1.6rem;
+    padding-bottom: 1rem;
+}
+
+.show-menu li {
+    border: 2px solid #dddd;
+    border-radius: 4px;
+    padding: 0.45rem 0.65rem;
+}
+
 .content p {
     text-indent: 42px;
     padding: 12px;
@@ -144,7 +166,9 @@ ol {
 .navbar .nav-links {
     display: flex;
     justify-content: flex-start;
-    align-items: center;
+    align-items: start;
+    text-align: left;
+    flex-direction: column;
 
     padding: .6rem 1.3rem;
 }
@@ -176,9 +200,51 @@ ol {
     transition: color .5s;
 }
 
+.link-active {
+    font-size: 1.3rem;
+    color: #D21111;;
+}
+
+.link-active a {
+    margin-right: 0.94rem;
+}
+
 .nav-link a:hover {
     color: #D21111;
     letter-spacing: .2pt;
+}
+
+.btn-toggle-menu {
+    position: relative;
+    top: 40px;
+    width: 49px;
+    height: 27px;
+    left: 91%;
+    cursor: pointer;
+    color: #D21111;
+    font-size: 1.2rem;
+    font-weight: bolder;
+    background: transparent;
+    border: 2px #d21111 groove;
+    border-radius: 5px;
+}
+.btn-toggle-menu:hover {
+    transition: 0.45s linear;
+    opacity: 0.8;
+}
+
+.dropdown-menu .nav-link {
+    border: 2px solid #dddd;
+    border-radius: 4px;
+    padding: 0.45rem 0.65rem;
+}
+
+.dropdown-menu .nav-link {
+    display: none;    
+}
+
+.show-menu .nav-link {
+    display: block;    
 }
 
 
@@ -212,11 +278,20 @@ ol {
 .hero-container {
     width: 100%;
     height: 81vh;
-    background: url("../img/Dark-romanticism.jpg");
-    background-position: right;
+    background-position: bottom;
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+#index .hero-container {
+    background-image: url("../img/tumbs/Frases-sobre-literatura-Bukowski.jpg");
+    background-size: initial;
+    background-position: center;
+}
+#index .hero {
+    background: rgba(12, 90, 56, .71);
+}
+
 
 .hero {
     width: 100%;
@@ -251,4 +326,3 @@ ol {
     margin-top: 1.2rem;
     font-size: 1.2rem;
 }
-
